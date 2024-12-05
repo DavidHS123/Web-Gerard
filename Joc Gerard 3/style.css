@@ -1,0 +1,120 @@
+/* Fons separat */
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('background.jpg') no-repeat center center fixed; /* Imatge de fons */
+    background-size: cover;
+    filter: blur(5px); /* Difumina només la imatge */
+    z-index: -1; /* Envia la imatge al darrere */
+}
+
+/* Contenidor principal */
+#main-container {
+    position: relative;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6); /* Fons semi-transparent per destacar el text */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Ombra subtil */
+}
+
+/* Cos */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #ffffff; /* Color de la lletra blanca */
+}
+
+/* Títol */
+h1, h2 {
+    color: #ffffff;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombra al text */
+}
+
+/* Botons */
+button {
+    background: linear-gradient(45deg, #ff7f50, #ff4500); /* Gradient atractiu */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Ombra del botó */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animacions */
+}
+
+/* Animació al passar per sobre del botó */
+button:hover {
+    transform: scale(1.1); /* Amplia el botó lleugerament */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Intensifica l'ombra */
+}
+
+/* Animació al fer clic */
+button:active {
+    transform: scale(0.95); /* Redueix lleugerament el botó */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombra més suau */
+}
+
+/* Instruccions */
+#instructions {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombra al text */
+}
+
+/* Selecció de jugadors */
+#player-selection {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fons semi-transparent per a la selecció de jugadors */
+    border-radius: 8px;
+}
+
+#player-form input, #player-form select {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+}
+
+#player-list {
+    margin-top: 20px;
+}
+
+#player-list div {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fons semi-transparent per a la llista de jugadors */
+    border-radius: 8px;
+}
+
+/* Estils per als partits */
+.match {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fons semi-transparent */
+    border-radius: 8px;
+    text-align: center;
+}
+
+.match button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
